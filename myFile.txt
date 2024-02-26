@@ -1,4 +1,5 @@
 int main ()
 {
-cin>>lior
+  cin>>lior
+  cout<<"Romi is the best";
 }
