@@ -1,4 +1,4 @@
 int main ()
 {
- cout<<"We fix it again"
+cin>>lior
 }
