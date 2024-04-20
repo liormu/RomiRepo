@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entries List</title>
+</head>
+<body>
+    <h1>Entries List</h1>
+    <ul>
+        {% for entry in entries %}
+        <li>{{ entry.name }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Add New Entry</h2>
+    <form action="/add" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age"><br><br>
+        <input type="submit" value="Add Entry">
+    </form>
+    <h2>Delete Entry</h2>
+    <form action="/delete" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <input type="submit" value="Delete Entry">
+    </form>
+</body>
+</html>
